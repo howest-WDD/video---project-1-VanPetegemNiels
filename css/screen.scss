@@ -1,0 +1,63 @@
+/* --------------------------------------------*\
+  #SETTINGS
+\* --------------------------------------------*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+$color-white: #f0f0f0;
+$color-donkergroen: #98983d;
+$color-groen-geel: #cccc33;
+$color-bruin: #5c3d04;
+$color-blauw: #99ffff;
+$color-groen: #8cbe15;
+
+$font-standard: "Open Sans", sans-serif;
+$font-carousel: "Pacifico", cursive;
+
+/* --------------------------------------------*\
+  #GENERIC
+\* --------------------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* --------------------------------------------*\
+  #ELEMENTS
+\* --------------------------------------------*/
+body {
+  position: relative;
+}
+/* --------------------------------------------*\
+  #OBJECTS
+\* --------------------------------------------*/
+
+/* --------------------------------------------*\
+  #COMPONENTS
+\* --------------------------------------------*/
+.c-logo {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 1rem;
+}
+.c-nav-link {
+  color: $color-groen;
+  background-color: $color-bruin;
+  text-decoration: none;
+  transition: color 0.5s text-decoration 0.5s;
+  &:hover {
+    color: $color-groen-geel;
+    text-decoration: underline;
+  }
+  &:active {
+    color: $color-groen-geel;
+  }
+}
+/* --------------------------------------------*\
+  #BOOTSTRAP
+\* --------------------------------------------*/
+
+/* --------------------------------------------*\
+  #UTILITIES
+\* --------------------------------------------*/
