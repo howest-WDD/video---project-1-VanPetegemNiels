@@ -7,337 +7,451 @@
     <title>Broodjes Dekarroo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/screen.css" type="text/css" media="all" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
   </head>
   <body data-bs-spy="scroll" data-offset="0" data-target="#navbar_ID">
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light shadow-sm bg-white">
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <a class="navbar-brand c-logo" href="index.html"><img src="images/logo.png" alt="logo" width="532" height="532" class="c-logo" /></a>
         <ul id="main_nav" class="nav nav-pills ms-auto">
-          <li class="nav-item"><a class="nav-link scrollto c-nav-link" href="#section_1">Home</a></li>
+          <li class="nav-item"><a class="nav-link scrollto c-nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link scrollto c-nav-link" href="#section_2">Menu</a></li>
           <li class="nav-item"><a class="nav-link scrollto c-nav-link" href="#section_3">Over</a></li>
           <li class="nav-item"><a class="nav-link scrollto c-nav-link" href="#section_4">Contact</a></li>
         </ul>
       </div>
     </nav>
-    <section id="section_1">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="images/carousel 1.png" alt="First slide" />
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="images/carousel 2.png" alt="Second slide" />
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="images/carousel 3.png" alt="Third slide" />
+    <section>
+      <div>
+        <div class="container">
+          <div class="row">
+            <div class="col-10 offset-1">
+              <video class="img-fluid" src="images/VID_20220120_084328.mp4" muted controls autoplay></video>
+            </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only"></span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only"></span>
-        </a>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-10 offset-1">
+            <div id="carouselExampleIndicators" class="carousel slide c-carousel" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="#kip_cocktail"><img src="images/carousel1.png" class="d-block w-100" alt="carousel 1" /></a>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/carousel2.png" class="d-block w-100" alt="carousel 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/carousel3.png" class="d-block w-100" alt="carousel 3" />
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section id="section_2">
-      <h1>Menu</h1>
-      <div class="accordion" id="accordionPanelsStayOpenExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">Ontbijt (zolang de voorraad strekt)</button>
-          </h2>
-          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-            <div class="accordion-body">
-              <p>
-                Koffie, thee of cécémel, 2 sandwiches met beleg (kaas/hesp)<br />
-                1 koffiekoek (croissant, chocoladekoek of 8-koek) boter en konfituur
-              </p>
-              <p>8,00</p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">Ontbijtmanden</button>
-          </h2>
-          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-            <div class="accordion-body">
-              <p>
-                LUXE ONTBIJTMAND<br />
-                Bubbels of wijn, 4 belegde mini-broodjes met kaas, hesp, italiaanse ham en zalm,<br />
-                chocoladekoek, croissant, koffie, thee, fruitsap, chocolademelk, hardgekookt ei, yoghurt,<br />
-                seizoensfruit, konfituur, boter, speculoos, peperkoek, chocolade...
-              </p>
-              <p>
-                LUXE ONTBIJTMAND<br />
-                Bubbels of wijn, 4 belegde mini-broodjes met kaas, hesp, italiaanse ham en zalm, chocoladekoek,<br />
-                croissant, koffie, thee, fruitsap, chocolademelk, hardgekookt ei, yoghurt, seizoensfruit,<br />
-                konfituur, boter, speculoos, peperkoek, chocolade...
-              </p>
-              <p>
-                1 persoon 30,00 / 2 personen 55,00<br />
-                17,50 per persoon
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">Koffiekoeken</button>
-          </h2>
-          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-            <div class="accordion-body">
-              <p>
-                Croissant<br />
-                Chocoladekoek<br />
-                8-koek<br />
-                Rijsttaart<br />
-                Mattentaart
-              </p>
-              <p>
-                1,50<br />
-                1,50<br />
-                1,50<br />
-                2,50<br />
-                2,50
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">Broodjes</button>
-          </h2>
-          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
-            <div class="accordion-body">
-              <p>Onze baguettes zijn authentiek van smaak, naar oude recepturen en met een heel laag zoutgehalte gekozen voor uw gezondheid. Ze wegen altijd hetzelfde, maar doordat ze handgevormd zijn kan de vorm sterk verschillen. We hebben ook meergranenbroodjes 'Fitness', deze hebben een meerprijs van 0,50 euro. Er zijn ook sandwiches te verkrijgen, aan de prijs van een broodje - 1,00 euro.</p>
-              <h2>BROODJES ZONDER GROENTEN</h2>
-              <p>
-                Leeg broodje<br />
-                Chocopaste (Nutella)<br />
-                Jonge kaas<br />
-                Camembert<br />
-                Philadelphia kruidenkaas<br />
-                Mozzarella<br />
-                Kaas en hesp<br />
-                Hesp<br />
-                Americain prepare<br />
-                Huisbereide gehaktbal<br />
-                Kip curry<br />
-                Gebakken kipfiletreepjes<br />
-                Pittasalade (pikant)<br />
-                Eiersalade<br />
-              </p>
-              <p>
-                1,20<br />
-                2,70<br />
-                3,00<br />
-                3,20<br />
-                3,00<br />
-                3,20<br />
-                3,20<br />
-                3,00<br />
-                3,00<br />
-                3,20<br />
-                3,00<br />
-                3,20<br />
-                3,00<br />
-                3,00
-              </p>
-              <h2>BROODJES MET GROENTEN</h2>
-              <h3>Vegetarisch</h3>
-              <div>
-                <p>Gezond</p>
-                <p class="c-discription">ijsbergsla, tomaat, wortel, komkommer, ui</p>
-                <p>Veggie</p>
-                <p class="c-discription">ijsbergsla, tomaat, komkommer, mozzarella, yoghurtdressing</p>
+      <div class="container">
+        <div class="row">
+          <h1>Menu</h1>
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button accordion-button-even" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">Ontbijt (zolang de voorraad strekt)</button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                  <p>
+                    Koffie, thee of cécémel, 2 sandwiches met beleg (kaas/hesp)<br />
+                    1 koffiekoek (croissant, chocoladekoek of 8-koek) boter en konfituur
+                  </p>
+                  <p>8,00</p>
+                </div>
               </div>
-              <h3>Kaas</h3>
-              <div>
-                <p>Camembert</p>
-                <p class="c-discription">camembert, honing, appel, rozijnen, notenmix</p>
-                <p>Camvijg</p>
-                <p class="c-discription">camembert, vijgenconfituur, tuinkers</p>
-                <p>Kaas</p>
-                <p class="c-discription">jonge kaas, ijsbergsla, tomaat, wortel, komkommer, ei, mayonaise</p>
-                <p>Mozzarella</p>
-                <p class="c-discription">mozzarella, zongedroogde tomaten, basilicumolie, basilicum, ijsbergsla</p>
-                <p>Pesto</p>
-                <p class="c-discription">mozzarella, ijsbergsla, tomaat, pesto, parmezaanse kaas</p>
-                <p>Phila</p>
-                <p class="c-discription">philadelphia kruidenkaas, tomaat, ijsbergsla</p>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button accordion-button-odd collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">Ontbijtmanden</button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                  <p>
+                    LUXE ONTBIJTMAND<br />
+                    Bubbels of wijn, 4 belegde mini-broodjes met kaas, hesp, italiaanse ham en zalm,<br />
+                    chocoladekoek, croissant, koffie, thee, fruitsap, chocolademelk, hardgekookt ei, yoghurt,<br />
+                    seizoensfruit, konfituur, boter, speculoos, peperkoek, chocolade...
+                  </p>
+                  <p>
+                    LUXE ONTBIJTMAND<br />
+                    Bubbels of wijn, 4 belegde mini-broodjes met kaas, hesp, italiaanse ham en zalm, chocoladekoek,<br />
+                    croissant, koffie, thee, fruitsap, chocolademelk, hardgekookt ei, yoghurt, seizoensfruit,<br />
+                    konfituur, boter, speculoos, peperkoek, chocolade...
+                  </p>
+                  <p>
+                    1 persoon 30,00 / 2 personen 55,00<br />
+                    17,50 per persoon
+                  </p>
+                </div>
               </div>
-              <h3>Kip</h3>
-              <div>
-                <p>Kip natuur</p>
-                <p class="c-discription">gebakken kipfiletreepjes, ijsbergsla, tomaat, wortel, komkommer, ei, mayonaise</p>
-                <p>Kip barbecue</p>
-                <p class="c-discription">gebakken kipfiletreepjes, barbequesaus, tomaat, ijsbergsla, wortel</p>
-                <p>Kip cocktail</p>
-                <p class="c-discription">gebakken kipfiletreepjes, ijsbergsla, verse ananas, ei, cocktailsaus</p>
-                <p>Kip curry</p>
-                <p class="c-discription">kip curry, ijsbergsla, tomaat, wortel</p>
-                <p>Kip phila</p>
-                <p class="c-discription">gebakken kipfiletreepjes, philadelphiakaas, tomaat, ijsbergsla, komkommer</p>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button accordion-button-even collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">Koffiekoeken</button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                  <p>
+                    Croissant<br />
+                    Chocoladekoek<br />
+                    8-koek<br />
+                    Rijsttaart<br />
+                    Mattentaart
+                  </p>
+                  <p>
+                    1,50<br />
+                    1,50<br />
+                    1,50<br />
+                    2,50<br />
+                    2,50
+                  </p>
+                </div>
               </div>
-              <p>
-                3,30<br />
-                3,70
-              </p>
-              <p>
-                3,90 <br />
-                3,90 <br />
-                3,70 <br />
-                3,90 <br />
-                3,90 <br />
-                3,70
-              </p>
-              <p>
-                3,90 <br />
-                3,90 <br />
-                4,30 <br />
-                3,70 <br />
-                3,90
-              </p>
             </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingFive">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">Koffiekoeken</button>
-          </h2>
-          <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
-            <div class="accordion-body">
-              <p>
-                Croissant<br />
-                Chocoladekoek<br />
-                8-koek<br />
-                Rijsttaart<br />
-                Mattentaart<br />
-              </p>
-              <p>
-                1,50<br />
-                1,50<br />
-                1,50<br />
-                2,50<br />
-                2,50<br />
-              </p>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                <button class="accordion-button accordion-button-odd collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">Broodjes</button>
+              </h2>
+              <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                <div class="accordion-body">
+                  <p>Onze baguettes zijn authentiek van smaak, naar oude recepturen en met een heel laag zoutgehalte gekozen voor uw gezondheid. Ze wegen altijd hetzelfde, maar doordat ze handgevormd zijn kan de vorm sterk verschillen. We hebben ook meergranenbroodjes 'Fitness', deze hebben een meerprijs van 0,50 euro. Er zijn ook sandwiches te verkrijgen, aan de prijs van een broodje - 1,00 euro.</p>
+                  <h2>BROODJES ZONDER GROENTEN</h2>
+                  <p>
+                    Leeg broodje<br />
+                    Chocopaste (Nutella)<br />
+                    Jonge kaas<br />
+                    Camembert<br />
+                    Philadelphia kruidenkaas<br />
+                    Mozzarella<br />
+                    Kaas en hesp<br />
+                    Hesp<br />
+                    Americain prepare<br />
+                    Huisbereide gehaktbal<br />
+                    Kip curry<br />
+                    Gebakken kipfiletreepjes<br />
+                    Pittasalade (pikant)<br />
+                    Eiersalade<br />
+                  </p>
+                  <p>
+                    1,20<br />
+                    2,70<br />
+                    3,00<br />
+                    3,20<br />
+                    3,00<br />
+                    3,20<br />
+                    3,20<br />
+                    3,00<br />
+                    3,00<br />
+                    3,20<br />
+                    3,00<br />
+                    3,20<br />
+                    3,00<br />
+                    3,00
+                  </p>
+                  <h2>BROODJES MET GROENTEN</h2>
+                  <h3>Vegetarisch</h3>
+                  <div>
+                    <p>Gezond</p>
+                    <p class="c-discription">ijsbergsla, tomaat, wortel, komkommer, ui</p>
+                    <p>Veggie</p>
+                    <p class="c-discription">ijsbergsla, tomaat, komkommer, mozzarella, yoghurtdressing</p>
+                  </div>
+                  <h3>Kaas</h3>
+                  <div>
+                    <p>Camembert</p>
+                    <p class="c-discription">camembert, honing, appel, rozijnen, notenmix</p>
+                    <p>Camvijg</p>
+                    <p class="c-discription">camembert, vijgenconfituur, tuinkers</p>
+                    <p>Kaas</p>
+                    <p class="c-discription">jonge kaas, ijsbergsla, tomaat, wortel, komkommer, ei, mayonaise</p>
+                    <p>Mozzarella</p>
+                    <p class="c-discription">mozzarella, zongedroogde tomaten, basilicumolie, basilicum, ijsbergsla</p>
+                    <p>Pesto</p>
+                    <p class="c-discription">mozzarella, ijsbergsla, tomaat, pesto, parmezaanse kaas</p>
+                    <p>Phila</p>
+                    <p class="c-discription">philadelphia kruidenkaas, tomaat, ijsbergsla</p>
+                  </div>
+                  <h3>Kip</h3>
+                  <div>
+                    <p>Kip natuur</p>
+                    <p class="c-discription">gebakken kipfiletreepjes, ijsbergsla, tomaat, wortel, komkommer, ei, mayonaise</p>
+                    <p>Kip barbecue</p>
+                    <p class="c-discription">gebakken kipfiletreepjes, barbequesaus, tomaat, ijsbergsla, wortel</p>
+                    <p id="kip_cocktail">Kip cocktail</p>
+                    <p class="c-discription">gebakken kipfiletreepjes, ijsbergsla, verse ananas, ei, cocktailsaus</p>
+                    <p>Kip curry</p>
+                    <p class="c-discription">kip curry, ijsbergsla, tomaat, wortel</p>
+                    <p>Kip phila</p>
+                    <p class="c-discription">gebakken kipfiletreepjes, philadelphiakaas, tomaat, ijsbergsla, komkommer</p>
+                  </div>
+                  <p>
+                    3,30<br />
+                    3,70
+                  </p>
+                  <p>
+                    3,90 <br />
+                    3,90 <br />
+                    3,70 <br />
+                    3,90 <br />
+                    3,90 <br />
+                    3,70
+                  </p>
+                  <p>
+                    3,90 <br />
+                    3,90 <br />
+                    4,30 <br />
+                    3,70 <br />
+                    3,90
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingSix">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">Koffiekoeken</button>
-          </h2>
-          <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
-            <div class="accordion-body">
-              <p>
-                Croissant<br />
-                Chocoladekoek<br />
-                8-koek<br />
-                Rijsttaart<br />
-                Mattentaart<br />
-              </p>
-              <p>
-                1,50<br />
-                1,50<br />
-                1,50<br />
-                2,50<br />
-                2,50<br />
-              </p>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                <button class="accordion-button accordion-button-even collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">Warme broodjes</button>
+              </h2>
+              <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                <div class="accordion-body">
+                  <div>
+                    <h3>Hamburgers (100% rundsvlees)</h3>
+                    <p>Burger</p>
+                    <p class="c-discription">broodje met artisanale rundsburger, ijsbergsla, tomaat, rode ui en saus naar keuze</p>
+                    <p>Burger De Luxe</p>
+                    <p class="c-discription">broodje met artisanale rundsburger, ijsbergsla, tomaat, rode ui, versgebakken spek, kaas en saus naar keuze</p>
+                    <p>Burger DEKARROO</p>
+                    <p class="c-discription">broodje met artisanale rundsburger, ijsbergsla, tomaat, rode ui, versgebakken spek, kaas en saus naar keuze + extra bordje dagverse groenten</p>
+                  </div>
+                  <p>
+                    5,00 <br />
+                    6,50 <br />
+                    9,00
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">Koffiekoeken</button>
-          </h2>
-          <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
-            <div class="accordion-body">
-              <p>
-                Croissant<br />
-                Chocoladekoek<br />
-                8-koek<br />
-                Rijsttaart<br />
-                Mattentaart<br />
-              </p>
-              <p>
-                1,50<br />
-                1,50<br />
-                1,50<br />
-                2,50<br />
-                2,50<br />
-              </p>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                <button class="accordion-button accordion-button-odd collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">Slaatjes</button>
+              </h2>
+              <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+                <div class="accordion-body">
+                  <div>
+                    <p>Gezond</p>
+                    <p class="c-discription">Assortiment van dagverse groentjes</p>
+                    <p>Veggie</p>
+                    <p class="c-discription">Assortiment van dagverse groentjes met mozzarella en zongedroogde tomaten</p>
+                    <p>Hesp</p>
+                    <p class="c-discription">Assortiment van dagverse groentjes met hesp en asperges</p>
+                    <p>Kip</p>
+                    <p class="c-discription">Assortiment van dagverse groentjes met kipfiletreepjes en verse ananas</p>
+                    <p>Tonijn</p>
+                    <p class="c-discription">Assortiment van dagverse groentjes met tonijn en perzik</p>
+                    <p>Keuze van saus en dressing</p>
+                    <p class="c-discription">mayonaise, tartaar, andalouse, tomatenketchup, curryketchup, cocktailsaus, martinosaus, samourai, loempiasaus, mosterd, barbecuesaus, joppiesaus, pesto, yoghurtdressing, honingmosterdvinaigrette</p>
+                  </div>
+                  <p>
+                    7,00<br />
+                    8,50<br />
+                    8,50<br />
+                    9,00<br />
+                    9,00<br />
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingEIght">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEIght" aria-expanded="false" aria-controls="panelsStayOpen-collapseEIght">Koffiekoeken</button>
-          </h2>
-          <div id="panelsStayOpen-collapseEIght" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingEIght">
-            <div class="accordion-body">
-              <p>
-                Croissant<br />
-                Chocoladekoek<br />
-                8-koek<br />
-                Rijsttaart<br />
-                Mattentaart<br />
-              </p>
-              <p>
-                1,50<br />
-                1,50<br />
-                1,50<br />
-                2,50<br />
-                2,50<br />
-              </p>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+                <button class="accordion-button accordion-button-even collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">Mini-broodjes</button>
+              </h2>
+              <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
+                <div class="accordion-body">
+                  <p>Mini sandwiches</p>
+                  <p>Mini melkbroodjes</p>
+                  <p>Mini ciabatta</p>
+                  <p class="c-discription"></p>
+                  <ul>
+                    <li>Wit</li>
+                    <li>Volkoren</li>
+                    <li>Meergranen</li>
+                  </ul>
+                  <p>Kaizerbroodjes</p>
+                  <p class="c-discription"></p>
+                  <ul>
+                    <li>Natuur</li>
+                    <li>Lijnzaad</li>
+                    <li>Sesamzaad</li>
+                    <li>Maanzaad</li>
+                  </ul>
+                  <p>Mini sandwino</p>
+                  <p class="c-discription">(zacht van kruim)</p>
+
+                  <ul>
+                    <li>Natuur</li>
+                    <li>Lijn- en sesamzaad</li>
+                    <li>Volkorentarwe</li>
+                    <li>Havervlokken</li>
+                  </ul>
+                  <p>Longuettes</p>
+                  <p class="c-discription">(rustieke broodjes op vloeroven gebakken)</p>
+
+                  <ul>
+                    <li>Natuur</li>
+                    <li>Meergranen</li>
+                    <li>Zonnebloempitten</li>
+                  </ul>
+                  <p>Verpakking inclusief plateau</p>
+                  <p class="c-discription">(om hygiënische redenen worden de plateaus niet meer teruggenomen)</p>
+                  <p>Verpakking exclusief plateau</p>
+                  <p class="c-discription">(eigen plateaus mogen op voorhand binnengebracht worden)</p>
+                  <p>
+                    1,20/stuk<br />
+                    1,20/stuk<br />
+                    1,30/stuk<br />
+                    1,30/stuk<br />
+                    1,30/stuk<br />
+                    1,40/stuk <br />
+                    3,00/stuk <br />
+                    1,00/stuk
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingNine">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">Koffiekoeken</button>
-          </h2>
-          <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingNine">
-            <div class="accordion-body">
-              <p>
-                Croissant<br />
-                Chocoladekoek<br />
-                8-koek<br />
-                Rijsttaart<br />
-                Mattentaart<br />
-              </p>
-              <p>
-                1,50<br />
-                1,50<br />
-                1,50<br />
-                2,50<br />
-                2,50<br />
-              </p>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingEight">
+                <button class="accordion-button accordion-button-odd collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">Huisbereide soep (vanaf oktober tot april)</button>
+              </h2>
+              <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingEight">
+                <div class="accordion-body">
+                  <p>Gedurende het ganse jaar is er Minute Soup te verkrijgen (tomaten - erwten - kip) aan de prijs van 2,20</p>
+                  <p>Ter plaatse</p>
+                  <p>1/2 stokbrood en boter</p>
+                  <p>Om mee te nemen</p>
+                  <p>Per liter</p>
+                  <p>
+                    3,50<br />
+                    0,50<br />
+                    2,60<br />
+                    6,00<br />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingNine">
+                <button class="accordion-button accordion-button-even collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">Dranken</button>
+              </h2>
+              <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingNine">
+                <div class="accordion-body">
+                  <h3>Frisdranken</h3>
+                  <p>Capri Sun (20cl)</p>
+                  <p>Cecemel (20cl</p>
+                  <p>Coca cola regular of zero (33cl/50cl)</p>
+                  <p>Evian (50cl)</p>
+                  <p>Fanta (33cl/50cl)</p>
+                  <p>Gini (33cl)</p>
+                  <p>Ice tea (33cl)</p>
+                  <p>Minute Maid (33cl)</p>
+                  <p>Perrier (50cl)</p>
+                  <p>Schweppes Agrum (33cl)</p>
+                  <p>Spa bruis (50cl)</p>
+                  <p>Sprite (33cl/50cl)</p>
+                  <p>
+                    3,50<br />
+                    0,50<br />
+                    2,60<br />
+                    6,00<br />
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section id="section_3">
-      <p>he</p>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <div class="container">
+        <div class="row">
+          <h1 class="col-12">Over ons</h1>
+          <p>Bij Dekarroo kan u elke dag terecht voor ovenverse broodjes om mee te nemen of om te nuttigen in ons gezellig interieur bij een kopje koffie of een drankje.</p>
+          <p>U kan kiezen uit witte broodjes, meergranenbroodjes en warme broodjes (Panini/Croques). Tevens is er een enorme keuze aan beleg en dagverse groentjes.</p>
+          <p>Verder kan u bij ons ook terecht voor koffiekoeken, ontbijtmanden en broodmanden. Onze slaatjes zijn tevens een aanrader en kunnen ook meegenomen worden in een BIO-snackbox.</p>
+          <p>Vanaf oktober tot einde april kan u bij ons ook terecht voor een heerlijke tas huisbereide soep (ook meeneembaar).</p>
+          <p>Vanaf heden kan je bij ons ook terecht voor 100 % rundsburgers en croques ... Toppers!</p>
+          <p>Je merkt dus dat bij Dekarroo kwaliteit boven alles gaat en dus zeker een bezoekje waard is. Franky en zijn neef Jordi, heten U van harte welkom in hun zaak.</p>
+          <img src="images/gevel.png" alt="gevel" width="716" height="405" />
+        </div>
+      </div>
     </section>
     <section id="section_4">
-      <p>he</p>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <div class="container">
+        <div class="row">
+          <div class="c-contact form-group col-lg-6">
+            <h2>Schrijf je nu in voor onze nieuwsbrief</h2>
+            <div class="mb-3">
+              <label for="name" class="form-label">Naam + familienaam</label>
+              <input type="text" class="form-control" id="name" placeholder="Jan Janssens" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="email" placeholder="janjanssens@hotmail.be" />
+            </div>
+            <a href="#" class="btn c-button">BEVESTIGEN</a>
+          </div>
+          <div class="c-gegevens col-lg-6">
+            <h2>Contactgegevens</h2>
+            <p>
+              Broodjes Dekarroo<br />
+              Kasteelstraat 14<br />
+              9660 Brakel<br />
+              Tel: 055 / 425 111<br />
+              E-mail: info@dekarroo.be <br />
+              BE O838.293.794
+            </p>
+            <p>
+              Maandag tot en met vrijdag <br />
+              06u30 tot 14u00 (*) <br />
+              Zaterdag <br />
+              08u30 tot 14u00 (*) <br />
+              Gesloten op zon- en feestdagen <br />
+              Tijdens schoolvakanties! <br />
+              08u30 tot 14u00 (*) <br />
+              (*) Bestellingen kunnen alle dagen afgehaald worden tot 14u30
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <iframe class="c-kaart" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2521.5508932458715!2d3.7611617156294908!3d50.802431179525435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c30866e9d0231b%3A0x3476206311f81bac!2sKasteelstraat%2014%2C%209660%20Brakel!5e0!3m2!1snl!2sbe!4v1639588494455!5m2!1snl!2sbe"></iframe>
+      </div>
     </section>
-
-    <!-- JavaScript Bundle with Popper -->
+    <footer>
+      <img src="images/logo.png" alt="logo" />
+      <img src="images/HowestLogo.png" alt="HowestLogo" />
+      <p>disclaimer: dit is een schoolopdracht van Niels Van Petegem en dit is dus niet de officiële website van broodjeszaak dekarroo</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -28,6 +28,13 @@ $font-carousel: "Pacifico", cursive;
 \* --------------------------------------------*/
 body {
   position: relative;
+  background-color: $color-white;
+}
+nav {
+  background-color: $color-bruin;
+}
+h1 {
+    text-align: center;
 }
 /* --------------------------------------------*\
   #OBJECTS
@@ -54,10 +61,46 @@ body {
     color: $color-groen-geel;
   }
 }
+.c-video {
+}
+.c-carousel {
+  margin-bottom: 3rem;
+  padding-top: 2rem;
+}
+
 /* --------------------------------------------*\
   #BOOTSTRAP
 \* --------------------------------------------*/
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: $color-groen-geel;
+  text-decoration: underline;
+  background-color: $color-bruin;
+}
+.accordion-button {
+  color: $color-bruin;
+  &:focus {
+    border: none;
+  }
+  &-even {
+    background-color: $color-groen;
 
+    &:not(.collapsed) {
+      color: $color-bruin;
+      background-color: $color-groen;
+    }
+  }
+  &-odd {
+    background-color: $color-donkergroen;
+    &:not(.collapsed) {
+      color: $color-bruin;
+      background-color: $color-donkergroen;
+    }
+  }
+}
+.accordion-body {
+    background-color: $color-white;
+}
 /* --------------------------------------------*\
   #UTILITIES
 \* --------------------------------------------*/

@@ -19,6 +19,15 @@
 \* --------------------------------------------*/
 body {
   position: relative;
+  background-color: #f0f0f0;
+}
+
+nav {
+  background-color: #5c3d04;
+}
+
+h1 {
+  text-align: center;
 }
 
 /* --------------------------------------------*\
@@ -50,9 +59,51 @@ body {
   color: #cccc33;
 }
 
+.c-carousel {
+  margin-bottom: 3rem;
+  padding-top: 2rem;
+}
+
 /* --------------------------------------------*\
   #BOOTSTRAP
 \* --------------------------------------------*/
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #cccc33;
+  text-decoration: underline;
+  background-color: #5c3d04;
+}
+
+.accordion-button {
+  color: #5c3d04;
+}
+
+.accordion-button:focus {
+  border: none;
+}
+
+.accordion-button-even {
+  background-color: #8cbe15;
+}
+
+.accordion-button-even:not(.collapsed) {
+  color: #5c3d04;
+  background-color: #8cbe15;
+}
+
+.accordion-button-odd {
+  background-color: #98983d;
+}
+
+.accordion-button-odd:not(.collapsed) {
+  color: #5c3d04;
+  background-color: #98983d;
+}
+
+.accordion-body {
+  background-color: #f0f0f0;
+}
+
 /* --------------------------------------------*\
   #UTILITIES
 \* --------------------------------------------*/
