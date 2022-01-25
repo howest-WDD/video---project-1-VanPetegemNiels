@@ -20,14 +20,48 @@
 body {
   position: relative;
   background-color: #f0f0f0;
+  font-family: "Open Sans", sans-serif;
 }
 
 nav {
   background-color: #5c3d04;
 }
 
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  color: #5c3d04;
+}
+
 h1 {
   text-align: center;
+  font-size: 40px;
+  padding-top: 8rem;
+}
+
+h2 {
+  font-size: 1.875rem;
+}
+
+h3 {
+  font-size: 1.5625rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-weight: double bold;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #5c3d04;
+  margin-bottom: 0.625rem;
+}
+
+li {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #5c3d04;
 }
 
 /* --------------------------------------------*\
@@ -59,9 +93,52 @@ h1 {
   color: #cccc33;
 }
 
+.c-video {
+  padding-top: 8rem;
+}
+
 .c-carousel {
   margin-bottom: 3rem;
   padding-top: 2rem;
+}
+
+.c-img {
+  width: 500;
+  height: 282;
+}
+
+.c-discription {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #5c3d04;
+}
+
+.c-menu {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-left: 0;
+}
+
+.c-menu__itemprijs {
+  padding-bottom: 1rem;
+}
+
+.c-menu__text {
+  padding: 0;
 }
 
 /* --------------------------------------------*\
@@ -76,6 +153,8 @@ h1 {
 
 .accordion-button {
   color: #5c3d04;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .accordion-button:focus {
@@ -102,6 +181,10 @@ h1 {
 
 .accordion-body {
   background-color: #f0f0f0;
+}
+
+.accordion-item {
+  border: none;
 }
 
 /* --------------------------------------------*\

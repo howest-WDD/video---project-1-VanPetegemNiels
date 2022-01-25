@@ -29,12 +29,41 @@ $font-carousel: "Pacifico", cursive;
 body {
   position: relative;
   background-color: $color-white;
+  font-family: $font-standard;
 }
 nav {
   background-color: $color-bruin;
 }
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  color: $color-bruin;
+}
 h1 {
-    text-align: center;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 8rem;
+}
+h2 {
+  font-size: 1.875rem;
+}
+h3 {
+  font-size: 1.5625rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-weight: double bold;
+}
+p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: $color-bruin;
+  margin-bottom: 0.625rem;
+}
+li {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: $color-bruin;
 }
 /* --------------------------------------------*\
   #OBJECTS
@@ -62,12 +91,37 @@ h1 {
   }
 }
 .c-video {
+  padding-top: 8rem;
 }
 .c-carousel {
   margin-bottom: 3rem;
   padding-top: 2rem;
 }
 
+.c-img {
+  width: 500;
+  height: 282;
+}
+.c-discription {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: $color-bruin;
+}
+.c-menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-left: 0;
+  &__itemprijs {
+    padding-bottom: 1rem;
+  }
+  &__text {
+    padding: 0;
+  }
+}
 /* --------------------------------------------*\
   #BOOTSTRAP
 \* --------------------------------------------*/
@@ -79,6 +133,8 @@ h1 {
 }
 .accordion-button {
   color: $color-bruin;
+  font-size: 1.25rem;
+  font-weight: bold;
   &:focus {
     border: none;
   }
@@ -99,7 +155,10 @@ h1 {
   }
 }
 .accordion-body {
-    background-color: $color-white;
+  background-color: $color-white;
+}
+.accordion-item {
+  border: none;
 }
 /* --------------------------------------------*\
   #UTILITIES
