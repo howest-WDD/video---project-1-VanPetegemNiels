@@ -13,27 +13,36 @@
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <a class="navbar-brand c-logo" href="index.html"><img src="images/logo.png" alt="logo" width="532" height="532" class="c-logo" /></a>
-        <ul id="main_nav" class="nav nav-pills ms-auto">
-          <li class="nav-item"><a class="nav-link scrollto c-nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link scrollto c-nav-link" href="#section_2">Menu</a></li>
-          <li class="nav-item"><a class="nav-link scrollto c-nav-link" href="#section_3">Over</a></li>
-          <li class="nav-item"><a class="nav-link scrollto c-nav-link" href="#section_4">Contact</a></li>
-        </ul>
+        <button id="openPopup" class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon c-hamburger">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#8cbe15" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="toggleMobileMenu">
+          <ul id="main_nav" class="nav nav-pills ms-auto navbar-nav ms-auto text-center">
+            <li class="nav-item"><a class="nav-link scrollto c-nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link scrollto c-nav-link" href="#Menu">Menu</a></li>
+            <li class="nav-item"><a class="nav-link scrollto c-nav-link" href="#Over">Over</a></li>
+            <li class="nav-item"><a class="nav-link scrollto c-nav-link" href="#Contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
     <div class="c-video">
       <div>
         <div class="container">
           <div class="row">
-            <div class="col-10 offset-1">
-              <video class="img-fluid" src="images/VID_20220120_084328.mp4" muted controls autoplay></video>
+            <div class="col-12 col-md-10 offset-md-1">
+              <video class="img-fluid" src="images/Dekarroo.Niels.Van.Petegem.mp4" muted controls autoplay></video>
             </div>
           </div>
         </div>
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-10 offset-1">
+          <div class="col-12 col-md-10 offset-md-1">
             <div id="carouselExampleIndicators" class="carousel slide c-carousel" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -64,13 +73,13 @@
         </div>
       </div>
     </div>
-    <section id="section_2">
+    <section id="Menu">
       <div class="container">
         <div class="row">
           <div class="col-10 offset-1">
             <div class="c-menu">
               <h1>Menu</h1>
-              <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div id="ontbijtmand" class="accordion" id="accordionPanelsStayOpenExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                     <button class="accordion-button accordion-button-even" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">Ontbijt (zolang de voorraad strekt)</button>
@@ -156,7 +165,7 @@
                     <div class="accordion-body">
                       <div class="container">
                         <div class="row">
-                          <p class="col-6 c-menu__text">Onze baguettes zijn authentiek van smaak, naar oude recepturen en met een heel laag zoutgehalte gekozen voor uw gezondheid. Ze wegen altijd hetzelfde, maar doordat ze handgevormd zijn kan de vorm sterk verschillen. We hebben ook meergranenbroodjes 'Fitness', deze hebben een meerprijs van 0,50 euro. Er zijn ook sandwiches te verkrijgen, aan de prijs van een broodje - 1,00 euro.</p>
+                          <p class="col-lg-6 col-12 c-menu__text">Onze baguettes zijn authentiek van smaak, naar oude recepturen en met een heel laag zoutgehalte gekozen voor uw gezondheid. Ze wegen altijd hetzelfde, maar doordat ze handgevormd zijn kan de vorm sterk verschillen. We hebben ook meergranenbroodjes 'Fitness', deze hebben een meerprijs van 0,50 euro. Er zijn ook sandwiches te verkrijgen, aan de prijs van een broodje - 1,00 euro.</p>
                         </div>
                       </div>
                       <h2>BROODJES ZONDER GROENTEN</h2>
@@ -288,14 +297,14 @@
                           <ul class="c-menu__item">
                             <li>
                               <p>Kip natuur</p>
-                              <p class="c-discription">gebakken kipfiletreepjes, ijsbergsla, tomaat, wortel, komkommer, ei, mayonaise</p>
+                              <p id="kip_cocktail" class="c-discription">gebakken kipfiletreepjes, ijsbergsla, tomaat, wortel, komkommer, ei, mayonaise</p>
                             </li>
                             <li class="c-menu__itemprijs">3,90</li>
                           </ul>
                           <ul class="c-menu__item">
                             <li>
                               <p>Kip barbecue</p>
-                              <p id="kip_cocktail" class="c-discription">gebakken kipfiletreepjes, barbequesaus, tomaat, ijsbergsla, wortel</p>
+                              <p class="c-discription">gebakken kipfiletreepjes, barbequesaus, tomaat, ijsbergsla, wortel</p>
                             </li>
                             <li class="c-menu__itemprijs">3,90</li>
                           </ul>
@@ -399,7 +408,7 @@
                             </li>
                             <li class="c-menu__itemprijs">9,00</li>
                           </ul>
-                          <ul class="c-menu__item">
+                          <ul id="mini-broodjes" class="c-menu__item">
                             <li>
                               <p>Keuze van saus en dressing</p>
                               <p class="c-discription">mayonaise, tartaar, andalouse, tomatenketchup, curryketchup, cocktailsaus, martinosaus, samourai, loempiasaus, mosterd, barbecuesaus, joppiesaus, pesto, yoghurtdressing, honingmosterdvinaigrette</p>
@@ -660,7 +669,7 @@
                             </li>
                             <li class="c-menu__itemprijs">2,20</li>
                           </ul>
-                          <ul class="c-menu__item">
+                          <ul id="Over" class="c-menu__item">
                             <li>
                               <p>Minute soup om mee te nemen</p>
                             </li>
@@ -677,25 +686,27 @@
         </div>
       </div>
     </section>
-    <section id="section_3">
+    <section>
       <div class="c-over">
         <div class="container">
           <div class="row">
             <h1 class="col-12">Over ons</h1>
-            <div class="col-6">
+            <div class="col-xl-6 col-12">
               <p>Bij Dekarroo kan u elke dag terecht voor ovenverse broodjes om mee te nemen of om te nuttigen in ons gezellig interieur bij een kopje koffie of een drankje.</p>
               <p>U kan kiezen uit witte broodjes, meergranenbroodjes en warme broodjes (Panini/Croques). Tevens is er een enorme keuze aan beleg en dagverse groentjes.</p>
               <p>Verder kan u bij ons ook terecht voor koffiekoeken, ontbijtmanden en broodmanden. Onze slaatjes zijn tevens een aanrader en kunnen ook meegenomen worden in een BIO-snackbox.</p>
               <p>Vanaf oktober tot einde april kan u bij ons ook terecht voor een heerlijke tas huisbereide soep (ook meeneembaar).</p>
               <p>Vanaf heden kan je bij ons ook terecht voor 100 % rundsburgers en croques ... Toppers!</p>
-              <p>Je merkt dus dat bij Dekarroo kwaliteit boven alles gaat en dus zeker een bezoekje waard is. Franky en zijn neef Jordi, heten U van harte welkom in hun zaak.</p>
+              <p id="Contact">Je merkt dus dat bij Dekarroo kwaliteit boven alles gaat en dus zeker een bezoekje waard is. Franky en zijn neef Jordi, heten U van harte welkom in hun zaak.</p>
             </div>
-            <img class="col-6" src="images/gevel.png" alt="gevel" width="716" height="405" />
+            <div class="col-6">
+              <img src="images/gevel.png" alt="gevel" width="716" height="405" />
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="section_4">
+    <section>
       <div class="c-contact">
         <div class="container">
           <div class="row">
@@ -710,21 +721,10 @@
                 <label for="email" class="form-label">E-mail</label>
                 <input type="email" class="form-control" id="email" placeholder="janjanssens@hotmail.be" />
               </div>
-              <a href="#" class="btn c-button">Schrijf in</a>
+              <a href="#" class="btn c-button">Schrijf je in</a>
             </div>
             <div class="c-gegevens col-lg-6">
-              <div class="col-3">
-                <h2>Contactgegevens</h2>
-                <p>
-                  Broodjes Dekarroo<br />
-                  Kasteelstraat 14<br />
-                  9660 Brakel<br />
-                  Tel: 055 / 425 111<br />
-                  E-mail: info@dekarroo.be <br />
-                  BE O838.293.794
-                </p>
-              </div>
-              <div class="col-5 c-openingsuren">
+              <div class="col-5">
                 <h2>Openingsuren</h2>
                 <p>
                   Maandag tot en met vrijdag <br />
@@ -737,18 +737,43 @@
                   (*) Bestellingen kunnen alle dagen afgehaald worden tot 14u30
                 </p>
               </div>
+              <div class="col-4 c-contactgegevens">
+                <h2>Contactgegevens</h2>
+                <p>
+                  Broodjes Dekarroo<br />
+                  Kasteelstraat 14<br />
+                  9660 Brakel<br />
+                  <a class="c-link" href="tel:+55425111">Tel: 055 / 425 111</a><br />
+                  <a class="c-link" href="email:info@dekarroo.be">E-mail: info@dekarroo.be</a><br />
+                  BE O838.293.794
+                </p>
+              </div>
             </div>
-            <div>
-              <iframe class="c-kaart" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2521.5508932458715!2d3.7611617156294908!3d50.802431179525435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c30866e9d0231b%3A0x3476206311f81bac!2sKasteelstraat%2014%2C%209660%20Brakel!5e0!3m2!1snl!2sbe!4v1639588494455!5m2!1snl!2sbe"></iframe>
+            <div class="c-facebook col-12">
+              <a class="c-facebook__icon" href="https://www.facebook.com/dekarroo" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                </svg>
+              </a>
+              <h2>Like onze pagina op facebook</h2>
             </div>
           </div>
+        </div>
+        <div>
+          <iframe class="c-kaart" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2521.5508932458715!2d3.7611617156294908!3d50.802431179525435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c30866e9d0231b%3A0x3476206311f81bac!2sKasteelstraat%2014%2C%209660%20Brakel!5e0!3m2!1snl!2sbe!4v1639588494455!5m2!1snl!2sbe"></iframe>
         </div>
       </div>
     </section>
     <footer class="c-footer">
-      <img class="c-footerimg" src="images/logo.png" alt="logo" />
-      <img class="c-footerimg" src="images/HowestLogo.png" alt="HowestLogo" />
-      <p>disclaimer: dit is een schoolopdracht van Niels Van Petegem en dit is dus niet de officiële website van broodjeszaak dekarroo</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <a href="http://www.dekarroo.be/" target="_blank"><img class="c-footerimg" src="images/logo.png" alt="logo" /></a>
+            <a href="https://www.howest.be/nl/opleidingen/graduaat/digitale-vormgeving" target="_blank"><img class="c-footerimg" src="images/HowestLogo.png" alt="HowestLogo" /></a>
+            <p>disclaimer: dit is een schoolopdracht van Niels Van Petegem en dit is dus niet de officiële website van broodjeszaak dekarroo</p>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>

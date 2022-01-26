@@ -77,6 +77,7 @@ li {
 .c-nav-link {
   color: #8cbe15;
   background-color: #5c3d04;
+  font-size: 1.0625rem;
   text-decoration: none;
   -webkit-transition: color 0.5s text-decoration 0.5s;
   transition: color 0.5s text-decoration 0.5s;
@@ -89,6 +90,10 @@ li {
 
 .c-nav-link:active {
   color: #cccc33;
+}
+
+.c-hamburger:active {
+  fill: #cccc33;
 }
 
 .c-video {
@@ -145,16 +150,16 @@ li {
 
 .c-over {
   padding-top: 3rem;
+  color: #5c3d04;
 }
 
 .c-contact {
   margin-top: 8rem;
   padding-top: 3rem;
-  background-color: #cccc33;
   color: #5c3d04;
 }
 
-.c-gegevens {
+.c-contact .c-gegevens {
   color: #5c3d04;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -173,8 +178,17 @@ li {
           align-items: top;
 }
 
-.c-gegevens .c-openingsuren {
+.c-contact .c-gegevens .c-contactgegevens {
   text-align: right;
+}
+
+.c-link {
+  text-decoration: none;
+  color: #5c3d04;
+}
+
+.c-link:hover {
+  color: #5c3d04;
 }
 
 .c-button {
@@ -187,11 +201,40 @@ li {
   transition: background-color 0.5s color 0.5s;
   font-size: 1.5rem;
   font-weight: bold;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .c-button:hover {
-  background-color: #8cbe15;
-  color: #f0f0f0;
+  background-color: #cccc33;
+}
+
+.c-facebook {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.c-facebook__icon {
+  color: #5c3d04;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.c-facebook__icon:hover {
+  color: #8cbe15;
 }
 
 .c-kaart {

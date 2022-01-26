@@ -78,6 +78,7 @@ li {
 .c-nav-link {
   color: $color-groen;
   background-color: $color-bruin;
+  font-size: 1.0625rem;
   text-decoration: none;
   transition: color 0.5s text-decoration 0.5s;
   &:hover {
@@ -86,6 +87,11 @@ li {
   }
   &:active {
     color: $color-groen-geel;
+  }
+}
+.c-hamburger {
+  &:active {
+    fill: $color-groen-geel;
   }
 }
 .c-video {
@@ -125,22 +131,31 @@ li {
 }
 .c-over {
   padding-top: 3rem;
+  color: $color-bruin;
 }
 .c-contact {
   margin-top: 8rem;
   padding-top: 3rem;
-  background-color: $color-groen-geel;
   color: $color-bruin;
+  .c-gegevens {
+    color: $color-bruin;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: top;
+
+    .c-contactgegevens {
+      text-align: right;
+    }
+  }
 }
-.c-gegevens {
+
+.c-link {
+  text-decoration: none;
   color: $color-bruin;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: top;
-  .c-openingsuren {
-    text-align: right;
+  &:hover {
+    color: $color-bruin;
   }
 }
 .c-button {
@@ -152,9 +167,25 @@ li {
   transition: background-color 0.5s color 0.5s;
   font-size: 1.5rem;
   font-weight: bold;
+  transition: background-color 0.3s;
   &:hover {
-    background-color: $color-groen;
-    color: $color-white;
+    background-color: $color-groen-geel;
+  }
+}
+.c-facebook {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  &__icon {
+    color: $color-bruin;
+    transition: color 0.5s;
+    &:hover {
+      color: $color-groen;
+    }
   }
 }
 .c-kaart {
