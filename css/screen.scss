@@ -181,10 +181,10 @@ li {
   padding-top: 2rem;
   padding-bottom: 2rem;
   &__icon {
-    color: $color-bruin;
+    color: $color-groen;
     transition: color 0.5s;
     &:hover {
-      color: $color-groen;
+      color: $color-groen-geel;
     }
   }
 }
@@ -194,10 +194,19 @@ li {
   margin: 2rem 0;
 }
 .c-footer {
-  text-align: center;
+  background-color: $color-bruin;
+  padding-top: 2rem;
+  color: $color-groen;
+  &__nieuws {
+    text-align: end;
+  }
   &img {
     height: 10rem;
     margin: 2rem;
+  }
+  &__logo {
+    text-align: center;
+    color: $color-groen;
   }
 }
 /* --------------------------------------------*\
@@ -209,41 +218,51 @@ li {
   text-decoration: underline;
   background-color: $color-bruin;
 }
-.accordion-button {
-  color: $color-bruin;
-  font-size: 1.25rem;
-  font-weight: bold;
-  &:focus {
+.accordion {
+  &-button {
+    color: $color-bruin;
+    font-size: 1.25rem;
+    font-weight: bold;
+    &:focus {
+      border: none;
+    }
+    &-even {
+      background-color: $color-groen;
+
+      &:not(.collapsed) {
+        color: $color-bruin;
+        background-color: $color-groen;
+      }
+    }
+    &-odd {
+      background-color: $color-donkergroen;
+      &:not(.collapsed) {
+        color: $color-bruin;
+        background-color: $color-donkergroen;
+      }
+    }
+  }
+  &-body {
+    background-color: $color-white;
+  }
+  &-item {
     border: none;
   }
-  &-even {
-    background-color: $color-groen;
+}
 
-    &:not(.collapsed) {
-      color: $color-bruin;
-      background-color: $color-groen;
+.form {
+  &-label {
+    font-weight: bold;
+  }
+  &-control {
+    font-weight: bold;
+    &:focus {
+      box-shadow: none;
+      border: solid $color-bruin 0.0625rem;
     }
   }
-  &-odd {
-    background-color: $color-donkergroen;
-    &:not(.collapsed) {
-      color: $color-bruin;
-      background-color: $color-donkergroen;
-    }
-  }
 }
-.accordion-body {
-  background-color: $color-white;
-}
-.accordion-item {
-  border: none;
-}
-.form-label {
-  font-weight: bold;
-}
-.form-control {
-  font-weight: bold;
-}
+
 /* --------------------------------------------*\
   #UTILITIES
 \* --------------------------------------------*/

@@ -228,13 +228,13 @@ li {
 }
 
 .c-facebook__icon {
-  color: #5c3d04;
+  color: #8cbe15;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
 
 .c-facebook__icon:hover {
-  color: #8cbe15;
+  color: #cccc33;
 }
 
 .c-kaart {
@@ -244,12 +244,23 @@ li {
 }
 
 .c-footer {
-  text-align: center;
+  background-color: #5c3d04;
+  padding-top: 2rem;
+  color: #8cbe15;
+}
+
+.c-footer__nieuws {
+  text-align: end;
 }
 
 .c-footerimg {
   height: 10rem;
   margin: 2rem;
+}
+
+.c-footer__logo {
+  text-align: center;
+  color: #8cbe15;
 }
 
 /* --------------------------------------------*\
@@ -304,6 +315,12 @@ li {
 
 .form-control {
   font-weight: bold;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: solid #5c3d04 0.0625rem;
 }
 
 /* --------------------------------------------*\

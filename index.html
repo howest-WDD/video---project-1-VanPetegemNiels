@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
     <title>Broodjes Dekarroo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/screen.css" type="text/css" media="all" />
@@ -22,7 +23,7 @@
         </button>
         <div class="collapse navbar-collapse" id="toggleMobileMenu">
           <ul id="main_nav" class="nav nav-pills ms-auto navbar-nav ms-auto text-center">
-            <li class="nav-item"><a class="nav-link scrollto c-nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link scrollto c-nav-link" href="#Home">Home</a></li>
             <li class="nav-item"><a class="nav-link scrollto c-nav-link" href="#Menu">Menu</a></li>
             <li class="nav-item"><a class="nav-link scrollto c-nav-link" href="#Over">Over</a></li>
             <li class="nav-item"><a class="nav-link scrollto c-nav-link" href="#Contact">Contact</a></li>
@@ -30,7 +31,7 @@
         </div>
       </div>
     </nav>
-    <div class="c-video">
+    <div id="Home" class="c-video">
       <div>
         <div class="container">
           <div class="row">
@@ -79,8 +80,8 @@
           <div class="col-10 offset-1">
             <div class="c-menu">
               <h1>Menu</h1>
-              <div id="ontbijtmand" class="accordion" id="accordionPanelsStayOpenExample">
-                <div class="accordion-item">
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div id="ontbijtmand" class="accordion-item">
                   <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                     <button class="accordion-button accordion-button-even" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">Ontbijt (zolang de voorraad strekt)</button>
                   </h2>
@@ -711,8 +712,7 @@
         <div class="container">
           <div class="row">
             <h1>Contact</h1>
-            <div class="form-group col-lg-6">
-              <h2>Schrijf je nu in voor onze nieuwsbrief</h2>
+            <div class="c-contactformulier form-group col-lg-5">
               <div class="mb-3">
                 <label for="name" class="form-label">Naam + familienaam</label>
                 <input type="text" class="form-control" id="name" placeholder="Jan Janssens" />
@@ -721,10 +721,18 @@
                 <label for="email" class="form-label">E-mail</label>
                 <input type="email" class="form-control" id="email" placeholder="janjanssens@hotmail.be" />
               </div>
-              <a href="#" class="btn c-button">Schrijf je in</a>
+              <div class="mb-3">
+                <label for="tel" class="form-label">Telefoon</label>
+                <input type="tel" class="form-control" id="tel" placeholder="+32123456789" />
+              </div>
+              <div class="mb-3">
+                <label for="bericht" class="form-label">Opmerking</label>
+                <textarea class="form-control" id="bericht" rows="3" placeholder="Schrijf hier uw vraag, probleem of opmerking"></textarea>
+              </div>
+              <a href="#" class="btn c-button">BEVESTIGEN</a>
             </div>
-            <div class="c-gegevens col-lg-6">
-              <div class="col-5">
+            <div class="c-gegevens col-lg-6 offset-lg-1">
+              <div class="col-sm-5 col-12 text-center text-sm-start">
                 <h2>Openingsuren</h2>
                 <p>
                   Maandag tot en met vrijdag <br />
@@ -737,25 +745,19 @@
                   (*) Bestellingen kunnen alle dagen afgehaald worden tot 14u30
                 </p>
               </div>
-              <div class="col-4 c-contactgegevens">
+              <div class="col-sm-4 col-12 text-center text-sm-end c-contactgegevens">
                 <h2>Contactgegevens</h2>
                 <p>
                   Broodjes Dekarroo<br />
-                  Kasteelstraat 14<br />
-                  9660 Brakel<br />
+                  <a class="c-link" href="https://goo.gl/maps/AebLmgNBUrMFe2Pf6" target="_blank">
+                    Kasteelstraat 14<br />
+                    9660 Brakel<br
+                  /></a>
                   <a class="c-link" href="tel:+55425111">Tel: 055 / 425 111</a><br />
                   <a class="c-link" href="email:info@dekarroo.be">E-mail: info@dekarroo.be</a><br />
                   BE O838.293.794
                 </p>
               </div>
-            </div>
-            <div class="c-facebook col-12">
-              <a class="c-facebook__icon" href="https://www.facebook.com/dekarroo" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                </svg>
-              </a>
-              <h2>Like onze pagina op facebook</h2>
             </div>
           </div>
         </div>
@@ -767,10 +769,27 @@
     <footer class="c-footer">
       <div class="container">
         <div class="row">
+          <div class="c-facebook col-6">
+            <a class="c-facebook__icon" href="https://www.facebook.com/dekarroo" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+              </svg>
+              <h2>Like onze pagina op facebook</h2>
+            </a>
+          </div>
+          <div class="form-group col-lg-5 c-footer__nieuws">
+            <h2>Schrijf je nu in voor onze nieuwsbrief</h2>
+            <div class="mb-3">
+              <input type="email" class="form-control c-footer__nieuws-input" placeholder="nielsvanpetegem@hotmail.be" />
+            </div>
+            <a href="#" class="btn c-button">Schrijf je in</a>
+          </div>
           <div class="col-12">
-            <a href="http://www.dekarroo.be/" target="_blank"><img class="c-footerimg" src="images/logo.png" alt="logo" /></a>
-            <a href="https://www.howest.be/nl/opleidingen/graduaat/digitale-vormgeving" target="_blank"><img class="c-footerimg" src="images/HowestLogo.png" alt="HowestLogo" /></a>
-            <p>disclaimer: dit is een schoolopdracht van Niels Van Petegem en dit is dus niet de officiële website van broodjeszaak dekarroo</p>
+            <div class="c-footer__logo">
+              <a href="http://www.dekarroo.be/" target="_blank"><img class="c-footerimg" src="images/logo.png" alt="logo" /></a>
+              <a href="https://www.howest.be/nl/opleidingen/graduaat/digitale-vormgeving" target="_blank"><img class="c-footerimg" src="images/HowestLogo.png" alt="HowestLogo" /></a>
+              <p>disclaimer: dit is een schoolopdracht van Niels Van Petegem en dit is dus niet de officiële website van broodjeszaak dekarroo</p>
+            </div>
           </div>
         </div>
       </div>
