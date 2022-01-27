@@ -196,7 +196,7 @@ li {
   background: #8cbe15;
   padding: 0 4rem;
   color: #5c3d04;
-  border-radius: 1rem;
+  border-radius: 0.7rem;
   -webkit-transition: background-color 0.5s color 0.5s;
   transition: background-color 0.5s color 0.5s;
   font-size: 1.5rem;
